@@ -1,0 +1,41 @@
+name: Generate GitHub Metrics
+
+on:
+  workflow_dispatch:   # 允许手动运行
+  schedule:
+    - cron: "0 0 * * *"   # 每天 UTC 0点运行（= 波士顿时间前一天晚上8点）
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: header, repositories
+          config_timezone: America/New_York
+
+          # 🔹 语言使用情况
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_details: percentage
+
+          # 🔹 成就徽章
+          plugin_achievements: yes
+          plugin_achievements_threshold: C
+
+          # 🔹 LeetCode
+          plugin_leetcode: yes
+          plugin_leetcode_user: polarismurray
+          plugin_leetcode_sections: solved, skills, recent
+
+      - name: Commit generated file
+        run: |
+          if [[ `git status --porcelain` ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.
