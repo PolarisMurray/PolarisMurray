@@ -7,7 +7,6 @@
 
 ![Metrics](./metrics.svg?v=1)
 
-
 ---
 
 <h2>🌱 I’m currently learning LeetCode</h2>
