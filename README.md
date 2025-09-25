@@ -1,9 +1,11 @@
 ## Hi there 👋
 
+![Metrics](./github-metrics.svg)
+
 <!--
 **PolarisMurray/PolarisMurray** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-![Metrics](./github-metrics.svg)
+
 
 Here are some ideas to get you started:
 
