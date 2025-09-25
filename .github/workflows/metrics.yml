@@ -1,9 +1,12 @@
 name: Generate GitHub Metrics
 
 on:
-  workflow_dispatch:   # 允许手动运行
+  workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"   # 每天 UTC 0点运行（= 波士顿时间前一天晚上8点）
+    - cron: "0 0 * * *"   # 每天 UTC 0 点（波士顿前一晚 8 点）
+
+permissions:
+  contents: write   
 
 jobs:
   build:
@@ -16,20 +19,18 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: github-metrics.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}   
           base: header, repositories
           config_timezone: America/New_York
 
-          # 🔹 语言使用情况
+          # 语言 & 成就（可留）
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_details: percentage
-
-          # 🔹 成就徽章
           plugin_achievements: yes
           plugin_achievements_threshold: C
 
-          # 🔹 LeetCode
+          # LeetCode
           plugin_leetcode: yes
           plugin_leetcode_user: polarismurray
           plugin_leetcode_sections: solved, skills, recent
@@ -38,4 +39,8 @@ jobs:
         run: |
           if [[ `git status --porcelain` ]]; then
             git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add github-metrics.svg
+            git commit -m "chore: update github-metrics.svg"
+            git push
+          fi
