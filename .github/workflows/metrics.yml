@@ -3,7 +3,7 @@ name: Generate GitHub Metrics
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"   # 每天 UTC 0 点（波士顿前一晚 8 点）
+    - cron: "0 0 * * *"
 
 permissions:
   contents: write
@@ -18,18 +18,16 @@ jobs:
       - name: Generate metrics
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.svg                  # ← 改名，避免旧缓存
+          filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           config_timezone: America/New_York
 
-          
-          plugin_achievements: no
-
-          # LeetCode
+          plugin_achievements: no      # ← 关掉成就
+          # LeetCode 
           plugin_leetcode: yes
           plugin_leetcode_user: polarismurray
-          plugin_leetcode_sections: solved, skills, recent
+          
 
       - name: Commit generated file
         run: |
