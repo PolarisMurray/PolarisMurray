@@ -6,7 +6,7 @@ on:
     - cron: "0 0 * * *"   # 每天 UTC 0 点（波士顿前一晚 8 点）
 
 permissions:
-  contents: write   
+  contents: write
 
 jobs:
   build:
@@ -18,10 +18,13 @@ jobs:
       - name: Generate metrics
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics.svg
-          token: ${{ secrets.METRICS_TOKEN }}   
+          filename: metrics.svg                  # ← 改名，避免旧缓存
+          token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           config_timezone: America/New_York
+
+          
+          plugin_achievements: no
 
           # LeetCode
           plugin_leetcode: yes
@@ -33,7 +36,7 @@ jobs:
           if [[ `git status --porcelain` ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add github-metrics.svg
-            git commit -m "chore: update github-metrics.svg"
+            git add metrics.svg
+            git commit -m "chore: update metrics.svg"
             git push
           fi
