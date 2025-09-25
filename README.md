@@ -5,7 +5,7 @@
 <!-- 语言饼图（按仓库） -->
 ![Repo Languages (pie)](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=PolarisMurray&theme=github)
 
-![Metrics](./github-metrics.svg)
+![Metrics](./metrics.svg?v=1)
 
 ---
 
