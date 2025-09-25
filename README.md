@@ -1,20 +1,15 @@
-## Hi there 👋
+![header](https://capsule-render.vercel.app/api?type=waving&height=200&text=PolarisMurray&fontAlign=50&color=gradient&animation=twinkling&section=header)
+
+![Murray's GitHub stats](https://github-readme-stats.vercel.app/api?username=PolarisMurray&show_icons=true&rank_icon=github&hide_title=true&hide_border=true&include_all_commits=true&bg_color=45,ff9a9e,fecfef,90f9c4,57e5ff,ffd1ff&text_color=000)
+
+<!-- 语言饼图（按仓库） -->
+![Repo Languages (pie)](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=PolarisMurray&theme=github)
 
 ![Metrics](./github-metrics.svg)
 
-<!--
-**PolarisMurray/PolarisMurray** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+---
 
-
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<h2>🌱 I’m currently learning LeetCode</h2>
+<h2>👯 I’m looking to collaborate on startup projects</h2>
+<h2>📫 How to reach me: mchen2@olin.edu</h2>
+<h2>⚡ Fun fact: I love coffee & coding at midnight ☕💻</h2>
