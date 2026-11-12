@@ -6,9 +6,9 @@
 
 - 🎓 I'm an ECE student, passionate about technology and building things end to end.
 - 🌱 Passionate about low-level technologies and principles, with a strong drive for performance optimization.
-- 👣 Seek out high-performance technologies (e.g., io_uring, SIMD) and languages (e.g., C/C++, Rust, Zig).
-- 🎈 Enjoy using full-stack technologies to solve real-world problems in daily life (e.g., note-taking, writing, public network mapping).
-- ❤️ Love zero-cost technologies (e.g., Rust iterators).
+- 💻 Enjoy building reliable software end to end, from backend services and APIs to user-facing apps.
+- 🧩 Like turning real-world problems into clean, maintainable, well-tested code.
+- 🚀 Care about good engineering practice: readable code, code review, and shipping iteratively.
 - 🤖 I do research, mainly focusing on LLM-based Agents and Agent Memory.
 
 #### 🛠️ Things I've been building
@@ -31,5 +31,5 @@
 ---
 
 - 👯 I'm looking to collaborate on startup projects.
-- 📫 How to reach me: mchen2@olin.edu
+- 📫 How to reach me: murraychen12@gmail.com
 - ⚡ Fun fact: I love coffee & coding at midnight ☕💻
