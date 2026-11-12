@@ -1,5 +1,21 @@
-![header](https://capsule-render.vercel.app/api?type=waving&height=200&text=PolarisMurray&fontAlign=50&color=gradient&animation=twinkling&section=header)
+### Hi there 👋 I'm Murray
 
+<a href="https://murraychen-rem.com"><code>me</code></a> ·
+<a href="https://murraychen-rem.com/projects"><code>projects</code></a> ·
+<a href="https://www.linkedin.com/in/murray-chen-7745ba382/"><code>linkedin</code></a>
+
+- 🎓 I'm an ECE student, passionate about technology and building things end to end.
+- 🌱 Passionate about low-level technologies and principles, with a strong drive for performance optimization.
+- 👣 Seek out high-performance technologies (e.g., io_uring, SIMD) and languages (e.g., C/C++, Rust, Zig).
+- 🎈 Enjoy using full-stack technologies to solve real-world problems in daily life (e.g., note-taking, writing, public network mapping).
+- ❤️ Love zero-cost technologies (e.g., Rust iterators).
+- 🤖 I do research, mainly focusing on LLM-based Agents and Agent Memory.
+
+#### 🛠️ Things I've been building
+
+- **[Agentic-Post-Train](https://github.com/PolarisMurray/Agentic-Post-Train)** & **[Multi-Agent](https://github.com/PolarisMurray/Multi-Agent)**: experiments in post-training and coordinating LLM agents.
+- **[Transformer_Re-Zero](https://github.com/PolarisMurray/Transformer_Re-Zero)**: rebuilding the Transformer from scratch to understand every piece.
+- **[Computer_Architecture](https://github.com/PolarisMurray/Computer_Architecture)** & **[Systems-Lab](https://github.com/PolarisMurray/Systems-Lab)**: CPU design in SystemVerilog and hands-on systems programming.
 
 <p align="center">
   <img
@@ -12,10 +28,8 @@
   />
 </p>
 
-
-
 ---
 
-<h2>👯 I’m looking to collaborate on startup projects</h2>
-<h2>📫 How to reach me: mchen2@olin.edu</h2>
-<h2>⚡ Fun fact: I love coffee & coding at midnight ☕💻</h2>
+- 👯 I'm looking to collaborate on startup projects.
+- 📫 How to reach me: mchen2@olin.edu
+- ⚡ Fun fact: I love coffee & coding at midnight ☕💻
